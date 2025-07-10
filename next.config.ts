@@ -1,8 +1,12 @@
-import type {NextConfig} from 'next';
+// En tu archivo: next.config.ts
 
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+
+  output: 'export', 
+
+  // El resto de tu configuración se queda igual
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -60,7 +60,7 @@ export function GoalModal({ isOpen, onOpenChange, currentGoal, onSetGoal }: Goal
     setIsLoading(true);
     try {
       // 1. Hacemos la llamada a nuestra nueva API usando fetch
-      const response = await fetch('/api/recommend-goal', {
+      const response = await fetch('https://tracker2-rho.vercel.app/api/recommend-goal', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
